@@ -3,71 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BEDROOM</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-      }
-      header {
-        background: #35424a;
-        color: #ffffff;
-        padding: 10px 0;
-        text-align: center;
-      }
-      .container {
-        width: 80%;
-        margin: 20px auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
-      .section {
-        margin: 10px;
-        padding: 20px;
-        background: #ffffff;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        width: calc(50% - 20px); /* Two columns */
-        box-sizing: border-box;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-      }
-      .booking {
-        background: #e2e2e2;
-        padding: 15px;
-        border-radius: 8px;
-        text-align: center;
-        margin-top: 20px;
-      }
-      footer {
-        text-align: center;
-        margin-top: 20px;
-        padding: 10px 0;
-        background: #35424a;
-        color: #ffffff;
-      }
-      .price {
-        font-weight: bold;
-        margin: 10px 0;
-      }
-      .button {
-        background-color: #35424a;
-        color: white;
-        border: none;
-        padding: 10px 15px;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-      .button:hover {
-        background-color: #5a6d75;
-      }
-    </style>
+    <title>SERENITY BEDROOMS</title>
+    <link rel="stylesheet" href="bedroom.css" />
   </head>
   <body>
     <header>
@@ -80,12 +17,7 @@
         <img src="./public/bed1.jpg" alt="Bedroom 1" />
         <p>Description of Bedroom 1.</p>
         <p class="price">$100 per night</p>
-        <button
-          class="button"
-          onclick="alert('Booking functionality coming soon!')"
-        >
-          Book Now
-        </button>
+        <button class="button" onclick="bookRoom()">Book Now</button>
       </div>
 
       <div class="section">
@@ -93,12 +25,7 @@
         <img src="./public/bed2.jpg" alt="Bedroom 2" />
         <p>Description of Bedroom 2.</p>
         <p class="price">$120 per night</p>
-        <button
-          class="button"
-          onclick="alert('Booking functionality coming soon!')"
-        >
-          Book Now
-        </button>
+        <button class="button" onclick="bookRoom()">Book Now</button>
       </div>
 
       <div class="section">
@@ -106,12 +33,7 @@
         <img src="./public/bed3.jpg" alt="Bedroom 3" />
         <p>Description of Bedroom 3.</p>
         <p class="price">$150 per night</p>
-        <button
-          class="button"
-          onclick="alert('Booking functionality coming soon!')"
-        >
-          Book Now
-        </button>
+        <button class="button" onclick="bookRoom()">Book Now</button>
       </div>
 
       <div class="section">
@@ -119,17 +41,14 @@
         <img src="./public/bed4.jpg" alt="Bedroom 4" />
         <p>Description of Bedroom 4.</p>
         <p class="price">$130 per night</p>
-        <button
-          class="button"
-          onclick="alert('Booking functionality coming soon!')"
-        >
-          Book Now
-        </button>
+        <button class="button" onclick="bookRoom()">Book Now</button>
       </div>
     </div>
 
     <footer>
-      <p>&copy; 2024 serenity homes. All rights reserved.</p>
+      <p>&copy; 2024 Serenity Homes. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
