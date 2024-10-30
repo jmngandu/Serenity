@@ -4,12 +4,24 @@ body {
   padding: 0;
   background-color: #f4f4f4;
 }
+
 header {
   background: #35424a;
   color: #ffffff;
   padding: 10px 0;
   text-align: center;
 }
+
+nav {
+  margin: 10px 0;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
 .container {
   width: 80%;
   margin: 20px auto;
@@ -17,6 +29,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .section {
   margin: 10px;
   padding: 20px;
@@ -26,11 +39,18 @@ header {
   width: calc(50% - 20px); /* Two columns */
   box-sizing: border-box;
 }
+
 img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
+
+.price {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
 footer {
   text-align: center;
   margin-top: 20px;
@@ -38,10 +58,7 @@ footer {
   background: #35424a;
   color: #ffffff;
 }
-.price {
-  font-weight: bold;
-  margin: 10px 0;
-}
+
 .button {
   background-color: #35424a;
   color: white;
@@ -50,6 +67,7 @@ footer {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .button:hover {
   background-color: #5a6d75;
 }
@@ -60,7 +78,17 @@ footer {
     width: 95%;
   }
   .section {
-    width: 100%;
-    margin: 10px 0;
+    width: 100%; /* Full width on mobile */
+    margin: 10px 0; /* Adjust margin for mobile */
+  }
+}
+
+/* Additional styles for mobile */
+@media (max-width: 480px) {
+  header {
+    font-size: 1.5em; /* Smaller header on mobile */
+  }
+  .button {
+    width: 100%; /* Full-width buttons on mobile */
   }
 }
