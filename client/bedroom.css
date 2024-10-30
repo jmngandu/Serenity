@@ -53,3 +53,14 @@ footer {
 .button:hover {
   background-color: #5a6d75;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  .section {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
